@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let userInput = prompt('enter a number')
+        let firstNum = parseInt(userInput)
+        let seconedUserInput = prompt('enter a second number')
+        let secondNum = parseInt(seconedUserInput)
+        let thirdNum = parseInt(prompt('Enter the third  number'))
+        function smallerValue(a, b, c) {
+            if(a<b){
+                if(a<c){
+                    return a
+
+                }
+                else{
+                    return c
+                }
+            }
+            else{
+                if(b<c){
+                    return b
+                }
+                else{
+                    return c
+                }
+            }
+        }
+        document.write(smallerValue(firstNum, secondNum, thirdNum))
+        
+    </script>
+</body>
+
+</html>
+
+
